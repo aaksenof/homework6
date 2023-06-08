@@ -1,7 +1,7 @@
 FROM tomcat:9
 RUN apt update
 RUN apt install maven -y
-ADD boxfuse-sample-java-war-hello /tmp/
+ADD boxfuse-sample-java-war-hello /tmp/boxfuse-sample-java-war-hello/
 WORKDIR /tmp/boxfuse-sample-java-war-hello/
 RUN mvn package
 WORKDIR /target/
